@@ -1,3 +1,3 @@
 def call() {
-  sh 'echo This is from the first groovy file'
+  echo "This is from the first groovy file"
 }
