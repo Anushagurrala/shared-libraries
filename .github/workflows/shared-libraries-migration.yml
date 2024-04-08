@@ -1,0 +1,31 @@
+name: shared-libraries-migration
+on:
+  workflow_dispatch:
+jobs:
+  Calling_first_groovy:
+    name: Calling first groovy
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4.1.0
+#     # 'script' was not transformed because there is no suitable equivalent in GitHub Actions
+#     - name: script
+#       arguments:
+#       - key: scriptBlock
+#         value:
+#           isLiteral: true
+#           value: firstGroovy()
+  Calling_second_groovy:
+    name: Calling second groovy
+    runs-on: ubuntu-latest
+    needs: Calling_first_groovy
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4.1.0
+#     # 'script' was not transformed because there is no suitable equivalent in GitHub Actions
+#     - name: script
+#       arguments:
+#       - key: scriptBlock
+#         value:
+#           isLiteral: true
+#           value: secondGroovy()
