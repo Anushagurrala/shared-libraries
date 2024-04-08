@@ -1,8 +1,8 @@
 def call() {
-  sh 'echo This is from the third groovy file'
+  echo "This is from the third groovy file"
   thirdGroovyInternalMethod() 
 }
 def thirdGroovyInternalMethod() {
-  sh 'echo This is from the third groovy internal method'
+  echo "This is from the third groovy internal method"
 }
   
