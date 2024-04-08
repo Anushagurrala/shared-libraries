@@ -1,0 +1,6 @@
+def call() {
+  sh 'echo This is from the second groovy file'
+  sh 'echo Calling third groovy file from second'
+  thirdGroovy()
+  
+}
